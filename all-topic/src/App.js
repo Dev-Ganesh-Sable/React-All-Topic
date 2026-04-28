@@ -3,6 +3,7 @@ import './App.css';
 import Demo from './Component/Demo';
 import Props from './Component/Props';
 import State from './Component/State';
+import ConditionalRendering from './Component/ConditionalRendering';
 
 function App() {
   return (
@@ -12,7 +13,10 @@ function App() {
       {/* ------------------------------------------------- */}
 
       {/* state */}
-      <State />
+      {/* <State /> */}
+
+      {/* conditional rendering */}
+      <ConditionalRendering />
 
     </div>
   );
