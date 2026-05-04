@@ -12,6 +12,10 @@ import ComponentWillUnMountOne from './Component/Rendering/ClassComponentLifeCyc
 import List from './Component/Rendering/ListAndKeys/List';
 import RefWithClassComponent from './Component/Rendering/Ref/RefWithClassComponent';
 import RefWithFunctionalComponent from './Component/Rendering/Ref/RefWithFunctionalComponent';
+import CounterTwo from './Component/Rendering/RenderingProps/CounterTwo';
+import HoveredCounter from './Component/Rendering/RenderingProps/HoveredCounter';
+import User from './Component/Rendering/RenderingProps/User';
+import Counter from './Component/Rendering/RenderingProps/Counter';
 
 function App() {
   return (
@@ -42,9 +46,19 @@ function App() {
 
       {/* ref class component */}
       {/* <RefWithClassComponent /> */}
-      
+
       {/* ref functional component */}
-      <RefWithFunctionalComponent />
+      {/* <RefWithFunctionalComponent /> */}
+      {/* -------------------------------------------------------------------- */}
+
+      {/* rendering props */}
+      {/* <CounterTwo /> */}
+      {/* <HoveredCounter /> */}
+      {/* <User render={(isLoggIn) => isLoggIn ? "Ganesh" : "Guest"} /> */}
+      <Counter render={(count, incrementCounts) => (<CounterTwo count={count} incrementCount={incrementCounts} />)} />
+
+      <Counter render={(count, incrementCounts) => (<HoveredCounter count={count} incrementCount={incrementCounts} />)} />
+
 
 
 
