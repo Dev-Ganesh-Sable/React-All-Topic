@@ -16,6 +16,12 @@ import CounterTwo from './Component/Rendering/RenderingProps/CounterTwo';
 import HoveredCounter from './Component/Rendering/RenderingProps/HoveredCounter';
 import User from './Component/Rendering/RenderingProps/User';
 import Counter from './Component/Rendering/RenderingProps/Counter';
+import ClickCounterHOC from './Component/Rendering/HigherOrderComponent/ClickCounterHOC';
+import HoverComponentHOC from './Component/Rendering/HigherOrderComponent/HoverComponentHOC';
+import UseState from './Component/Hooks/UseState';
+import UseEffect from './Component/Hooks/UseEffect';
+import UseRef from './Component/Hooks/UseRef';
+import ParentComponent from './Component/Hooks/UseCallBackHook/ParentComponent';
 
 function App() {
   return (
@@ -55,11 +61,25 @@ function App() {
       {/* <CounterTwo /> */}
       {/* <HoveredCounter /> */}
       {/* <User render={(isLoggIn) => isLoggIn ? "Ganesh" : "Guest"} /> */}
-      <Counter render={(count, incrementCounts) => (<CounterTwo count={count} incrementCount={incrementCounts} />)} />
+      {/* <Counter render={(count, incrementCounts) => (<CounterTwo count={count} incrementCount={incrementCounts} />)} />
 
-      <Counter render={(count, incrementCounts) => (<HoveredCounter count={count} incrementCount={incrementCounts} />)} />
+      <Counter render={(count, incrementCounts) => (<HoveredCounter count={count} incrementCount={incrementCounts} />)} /> */}
+      {/* ---------------------------------------------------------------------------------------------------------------------- */}
 
+      {/* higher order component */}
+      {/* <ClickCounterHOC /> */}
+      {/* <HoverComponentHOC /> */}
+      {/* ----------------------------------------------------------------------------------------------- */}
 
+      {/* Hooks  */}
+      {/* <UseState /> */}
+      {/* <UseEffect /> */}
+      {/* <UseRef /> */}
+
+      {/* use call back hook */}
+      {/* <ParentComponent /> */}
+
+      {/* use memo hook */}
 
 
 
