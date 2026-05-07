@@ -20,8 +20,9 @@ import ClickCounterHOC from './Component/Rendering/HigherOrderComponent/ClickCou
 import HoverComponentHOC from './Component/Rendering/HigherOrderComponent/HoverComponentHOC';
 import UseState from './Component/Hooks/UseState';
 import UseEffect from './Component/Hooks/UseEffect';
-import UseRef from './Component/Hooks/UseRef';
+// import UseRef from './Component/Hooks/UseRef';
 import ParentComponent from './Component/Hooks/UseCallBackHook/ParentComponent';
+import CounterOne from './Component/Hooks/UseMemo/CounterOne';
 
 function App() {
   return (
@@ -80,6 +81,7 @@ function App() {
       {/* <ParentComponent /> */}
 
       {/* use memo hook */}
+      <CounterOne/>
 
 
 
