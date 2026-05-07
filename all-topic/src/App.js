@@ -34,6 +34,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Component/React-Routing/Home';
 import About from './Component/React-Routing/About';
 import Contact from './Component/React-Routing/Contact';
+import AboutMe from './Component/React-Routing/AboutMe';
+import TechSkill from './Component/React-Routing/TechSkill';
+import Course from './Component/React-Routing/Course';
 
 
 // context api code 
@@ -122,7 +125,14 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}></Route>
+          <Route path="/about" element={<About />}>
+
+            {/* nested routings */}
+            <Route index path='' element={<AboutMe />}></Route>
+            <Route path='/about/tech-skill' element={<TechSkill />}></Route>
+            <Route path='/about/course' element={<Course />}></Route>
+
+          </Route>
           <Route path="/contact" element={<Contact />}></Route>
 
         </Routes>
