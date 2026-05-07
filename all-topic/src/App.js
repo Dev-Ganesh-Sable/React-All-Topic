@@ -29,6 +29,13 @@ import ComponentC from './Component/Hooks/Context-API/ComponentC';
 import DoctTitleOne from './Component/Hooks/Custom-Hooks/DoctTitleOne';
 import DoctTitleTwo from './Component/Hooks/Custom-Hooks/DoctTitleTwo';
 
+import Navbar from './Component/React-Routing/Navbar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './Component/React-Routing/Home';
+import About from './Component/React-Routing/About';
+import Contact from './Component/React-Routing/Contact';
+
+
 // context api code 
 
 export const userContext = React.createContext()
@@ -106,11 +113,20 @@ function App() {
       {/* -------------------------------------------------------------------------------------------------- */}
 
       {/* custom hook  */}
-      <DoctTitleOne/>
-      <DoctTitleTwo/>
+      {/* <DoctTitleOne/> */}
+      {/* <DoctTitleTwo/> */}
+      {/* ----------------------------------------------------------------------------------------------------------- */}
 
+      {/* routing in react */}
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
 
-
+        </Routes>
+      </BrowserRouter>
 
 
 
