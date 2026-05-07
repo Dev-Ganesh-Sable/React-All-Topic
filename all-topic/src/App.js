@@ -23,6 +23,7 @@ import UseEffect from './Component/Hooks/UseEffect';
 // import UseRef from './Component/Hooks/UseRef';
 import ParentComponent from './Component/Hooks/UseCallBackHook/ParentComponent';
 import CounterOne from './Component/Hooks/UseMemo/CounterOne';
+import CountOne from './Component/Hooks/UseReducerHook/CountOne';
 
 function App() {
   return (
@@ -81,7 +82,12 @@ function App() {
       {/* <ParentComponent /> */}
 
       {/* use memo hook */}
-      <CounterOne/>
+      {/*<CounterOne/>*/}
+
+      {/* use reducer hook */}
+      <CountOne />
+
+
 
 
 
