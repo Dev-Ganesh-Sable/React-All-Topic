@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Demo from './Component/Demo';
@@ -24,6 +25,14 @@ import UseEffect from './Component/Hooks/UseEffect';
 import ParentComponent from './Component/Hooks/UseCallBackHook/ParentComponent';
 import CounterOne from './Component/Hooks/UseMemo/CounterOne';
 import CountOne from './Component/Hooks/UseReducerHook/CountOne';
+import ComponentC from './Component/Hooks/Context-API/ComponentC';
+import DoctTitleOne from './Component/Hooks/Custom-Hooks/DoctTitleOne';
+import DoctTitleTwo from './Component/Hooks/Custom-Hooks/DoctTitleTwo';
+
+// context api code 
+
+export const userContext = React.createContext()
+export const salaryContext = React.createContext()
 
 function App() {
   return (
@@ -85,7 +94,21 @@ function App() {
       {/*<CounterOne/>*/}
 
       {/* use reducer hook */}
-      <CountOne />
+      {/* <CountOne /> */}
+      {/* ----------------------------------------------------------------------------------------------  */}
+
+      {/* context api */}
+      {/* <userContext.Provider value={"Ganesh"}>
+        <salaryContext.Provider value={50000}>
+          <ComponentC />
+        </salaryContext.Provider>
+      </userContext.Provider> */}
+      {/* -------------------------------------------------------------------------------------------------- */}
+
+      {/* custom hook  */}
+      <DoctTitleOne/>
+      <DoctTitleTwo/>
+
 
 
 
