@@ -122,24 +122,26 @@ function App() {
       {/* ----------------------------------------------------------------------------------------------------------- */}
 
 
-
       {/* routing in react */}
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/about" element={<About />}>
+      {/* <BrowserRouter> */}
+      {/* <Navbar /> */}
+      {/* <Routes> */}
+      {/* <Route path="/" element={<Home />}></Route> */}
+      {/* <Route path="/about" element={<About />}> */}
 
-            {/* nested routings */}
-            <Route index path='' element={<AboutMe />}></Route>
-            <Route path='/about/tech-skill' element={<TechSkill />}></Route>
-            <Route path='/about/course' element={<Course />}></Route>
+      {/* nested routings */}
+      {/* <Route index path='' element={<AboutMe />}></Route> */}
+      {/* <Route path='/about/tech-skill' element={<TechSkill />}></Route> */}
+      {/* <Route path='/about/course' element={<Course />}></Route> */}
 
-          </Route>
-          <Route path="/contact" element={<Contact />}></Route>
+      {/* </Route> */}
+      {/* <Route path="/contact" element={<Contact />}></Route> */}
 
-        </Routes>
-      </BrowserRouter>
+      {/* </Routes> */}
+      {/* </BrowserRouter> */}
+      {/* ----------------------------------------------------------------------------------------------------------------------------- */}
+        
+
 
 
 
