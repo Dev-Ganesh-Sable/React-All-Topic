@@ -1,9 +1,3 @@
-import React from 'react'
+import Home from "../Component/Home"
 
-function HomeContainer() {
-  return (
-    <div>HomeContainer</div>
-  )
-}
-
-export default HomeContainer
+export default Home

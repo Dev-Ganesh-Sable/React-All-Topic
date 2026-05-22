@@ -37,6 +37,9 @@ import Contact from './Component/React-Routing/Contact';
 import AboutMe from './Component/React-Routing/AboutMe';
 import TechSkill from './Component/React-Routing/TechSkill';
 import Course from './Component/React-Routing/Course';
+import HomeContainer from "./Component/React-Redux/Containers/HomeContainer"
+import GetData from './Component/HTTP-Request/GetData';
+import PostData from './Component/HTTP-Request/PostData';
 
 
 // context api code 
@@ -140,7 +143,16 @@ function App() {
       {/* </Routes> */}
       {/* </BrowserRouter> */}
       {/* ----------------------------------------------------------------------------------------------------------------------------- */}
-        
+
+      {/* react redux */}
+      {/*  <HomeContainer /> */}
+
+      {/* http request get method */}
+      {/* <GetData /> */}
+      <PostData />
+
+
+
 
 
 
