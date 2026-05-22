@@ -41,12 +41,13 @@ import Course from './Component/React-Routing/Course';
 
 // context api code 
 
-export const userContext = React.createContext()
-export const salaryContext = React.createContext()
+export const userContext = React.createContext();
+export const salaryContext = React.createContext();
 
 function App() {
   return (
     <div className="App">
+
       {/* props */}
       {/* <Props name="Ganesh" age="25" /> */}
       {/* ------------------------------------------------- */}
@@ -119,6 +120,8 @@ function App() {
       {/* <DoctTitleOne/> */}
       {/* <DoctTitleTwo/> */}
       {/* ----------------------------------------------------------------------------------------------------------- */}
+
+
 
       {/* routing in react */}
       <BrowserRouter>
